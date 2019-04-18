@@ -1,0 +1,13 @@
+# Backups
+backups:
+    - mydb:
+        type: mysql
+        user: mydb
+        pass: mydb
+        host: localhost
+        port: 3306
+        destinations:
+          - local:
+              frequency: '@always'
+              retention: 14
+              folder: '/mydb'

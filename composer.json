@@ -1,0 +1,24 @@
+{
+    "name": "roxorstudios/wingman",
+    "authors": [
+        {
+            "name": "Glenn Engelen",
+            "email": "glennengelen@icloud.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^4.2",
+        "symfony/var-dumper": "^4.2",
+        "php-di/php-di": "^6.0",
+        "symfony/yaml": "^4.2",
+        "adhocore/cron-expr": "^0.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wingman\\": "lib/"
+        },
+        "files": [
+             "lib/Helpers/application.php"
+        ]
+    }
+}
