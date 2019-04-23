@@ -1,11 +1,13 @@
 # Backups
 backups:
-    - mydb:
-        type: mysql
+    - mysql:
+        name: mydb
         user: mydb
         pass: mydb
         host: localhost
         port: 3306
+        exclude:
+          - mytable
         destinations:
           - local:
               frequency: '@always'

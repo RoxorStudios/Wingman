@@ -7,18 +7,21 @@ use Ahc\Cron\Expression;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Wingman\Interfaces\JobInterface;
 
 class CronCommand extends Command
 {
 
     private $config;
+    private $queue;
 
     /**
      * Construct
      */
-    public function __construct(FactoryInterface $wingman)
+    public function __construct(FactoryInterface $wingman, JobInterface $queue)
     {
         $this->config = $wingman->get('Config');
+        $this->queue = $queue;
 
         parent::__construct();
     }
@@ -55,16 +58,31 @@ class CronCommand extends Command
     /**
      * Parse database
      */
-    protected function parseBackupCandidate($name, $database)
+    protected function parseBackupCandidate($type, $database)
     {
         if(!isset($database['destinations'])) return;
 
         foreach($database['destinations'] as $destination) {
             $parameters = reset($destination);
             if(Expression::isDue($parameters['frequency'])) {
-                
+               $this->addToQueue($type, $database, $destination);
             }
         }
+    }
+
+    /**
+     * Post job
+     */
+    protected function addToQueue($type, $database, $destination)
+    {   
+        unset($database['destinations']);
+        $payload = [
+            'type' => $type,
+            'database' => $database,
+            'destination' => $destination
+        ];
+
+        $this->queue->add('backup', $payload);
     }
  
 }
