@@ -18,7 +18,7 @@ class JsonDatabase implements DatabaseInterface {
 	public function __construct()
 	{
 		define('LAZER_DATA_PATH', __DIR__.'/../../../content/database/'); 		
-		$this->setupDB();
+		//$this->setupDB();
 	}
 
 	/**
@@ -84,7 +84,7 @@ class JsonDatabase implements DatabaseInterface {
 	 */
 	private function setupDB()
 	{
-		//DB::remove('jobs');
+		DB::remove('jobs');
 		DB::create('jobs', [
 		    'id' => 'integer',
 		    'type' => 'string',
