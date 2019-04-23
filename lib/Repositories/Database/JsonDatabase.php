@@ -84,7 +84,7 @@ class JsonDatabase implements DatabaseInterface {
 	 */
 	private function setupDB()
 	{
-		DB::remove('jobs');
+		//DB::remove('jobs');
 		DB::create('jobs', [
 		    'id' => 'integer',
 		    'type' => 'string',
