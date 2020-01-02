@@ -1,31 +1,30 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "5f1daaab0923b20b554db31625027ac9",
-    "content-hash": "6de18432c6981ff3c9d22c8060b47ec8",
+    "content-hash": "b943cce467f54dec03c327d4b69bccc9",
     "packages": [
         {
             "name": "adhocore/cron-expr",
-            "version": "v0.0.6",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adhocore/php-cron-expr.git",
-                "reference": "d7bfd342d62795a50ad6377964cf567eb727961a"
+                "reference": "758e19bb3bff84c420fbb90098966f3bb281e90f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adhocore/php-cron-expr/zipball/d7bfd342d62795a50ad6377964cf567eb727961a",
-                "reference": "d7bfd342d62795a50ad6377964cf567eb727961a",
+                "url": "https://api.github.com/repos/adhocore/php-cron-expr/zipball/758e19bb3bff84c420fbb90098966f3bb281e90f",
+                "reference": "758e19bb3bff84c420fbb90098966f3bb281e90f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5"
+                "phpunit/phpunit": "^6.5 || ^7.5"
             },
             "type": "library",
             "autoload": {
@@ -50,7 +49,7 @@
                 "cron-expression",
                 "cron-parser"
             ],
-            "time": "2018-08-16 00:52:45"
+            "time": "2019-12-27T23:51:19+00:00"
         },
         {
             "name": "greg0/lazer-database",
@@ -102,10 +101,10 @@
                 "json",
                 "lazer"
             ],
-            "time": "2018-11-10 14:52:21"
+            "time": "2018-11-10T14:52:21+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -160,7 +159,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2018-03-21 22:21:57"
+            "time": "2018-03-21T22:21:57+00:00"
         },
         {
             "name": "league/flysystem",
@@ -244,7 +243,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-03-30 13:22:34"
+            "time": "2019-03-30T13:22:34+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -304,7 +303,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-04-17 08:51:36"
+            "time": "2019-04-17T08:51:36+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -355,7 +354,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-02-16 20:54:15"
+            "time": "2019-02-16T20:54:15+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -398,7 +397,7 @@
                 "invoke",
                 "invoker"
             ],
-            "time": "2017-03-20 19:28:22"
+            "time": "2017-03-20T19:28:22+00:00"
         },
         {
             "name": "php-di/php-di",
@@ -461,7 +460,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2019-03-07 20:02:32"
+            "time": "2019-03-07T20:02:32+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -498,7 +497,7 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2018-02-18 17:39:01"
+            "time": "2018-02-18T17:39:01+00:00"
         },
         {
             "name": "psr/container",
@@ -547,7 +546,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14 16:28:37"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "spatie/db-dumper",
@@ -597,7 +596,7 @@
                 "mysqldump",
                 "spatie"
             ],
-            "time": "2019-04-17 07:03:19"
+            "time": "2019-04-17T07:03:19+00:00"
         },
         {
             "name": "symfony/console",
@@ -669,7 +668,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-04-08 14:23:48"
+            "time": "2019-04-08T14:23:48+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -737,7 +736,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-12-05 08:06:11"
+            "time": "2018-12-05T08:06:11+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -784,7 +783,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -795,7 +794,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -854,7 +853,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -910,7 +909,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -965,7 +964,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-util",
@@ -1017,7 +1016,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2019-02-08 14:16:39"
+            "time": "2019-02-08T14:16:39+00:00"
         },
         {
             "name": "symfony/process",
@@ -1066,7 +1065,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-04-10 16:20:36"
+            "time": "2019-04-10T16:20:36+00:00"
         },
         {
             "name": "symfony/translation",
@@ -1141,7 +1140,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-04-10 16:20:36"
+            "time": "2019-04-10T16:20:36+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -1217,7 +1216,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-04-11 11:27:41"
+            "time": "2019-04-11T11:27:41+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1276,7 +1275,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-30 15:58:42"
+            "time": "2019-03-30T15:58:42+00:00"
         }
     ],
     "packages-dev": [],
